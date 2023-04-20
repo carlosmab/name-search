@@ -13,7 +13,6 @@ class GoogleSearchEngine(SearchEngine):
     """
         Search engine service for consuming Google Custom Search API
     """
-    
     results_per_page: int = 10 
     start_index: int = 1  
     
