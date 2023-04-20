@@ -13,3 +13,4 @@ class GoogleSearchResult(SearchResult):
             url=result["link"],
             snippet=result["snippet"]
         )
+

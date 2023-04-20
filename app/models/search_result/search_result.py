@@ -14,4 +14,8 @@ class SearchResult(ABC, BaseModel):
     def map_results(self, result: dict) -> None: ...
     
     
+
+class EngineInfo(ABC, BaseModel):
+    status: str
+    provider: str
     
