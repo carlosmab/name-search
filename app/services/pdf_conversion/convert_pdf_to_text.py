@@ -4,7 +4,7 @@ import PyPDF2
 # NOTE: This method was generated using "ChatGPT 3" it could lead to 
 # potential security risks or be outdated. 
 # Carefully review and validate all inputs and outputs
-def convert_pdf_to_string(filename: str) -> str:
+def convert_pdf_to_text(filename: str) -> str:
     """
     
     """

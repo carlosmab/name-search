@@ -232,6 +232,30 @@
         "documentation": {}
     },
     {
+        "label": "Depends",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "UploadFile",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "File",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
         "label": "APIRouter",
         "importPath": "fastapi",
         "description": "fastapi",
@@ -289,6 +313,14 @@
     },
     {
         "label": "FastAPI",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "status",
         "importPath": "fastapi",
         "description": "fastapi",
         "isExtraImport": true,
@@ -392,11 +424,11 @@
         "documentation": {}
     },
     {
-        "label": "GoogleSearchResult",
-        "importPath": "app.models.search_result.google_search_result",
-        "description": "app.models.search_result.google_search_result",
+        "label": "CustomAPIRouter",
+        "importPath": "app.routers.custom_api_router",
+        "description": "app.routers.custom_api_router",
         "isExtraImport": true,
-        "detail": "app.models.search_result.google_search_result",
+        "detail": "app.routers.custom_api_router",
         "documentation": {}
     },
     {
@@ -440,11 +472,11 @@
         "documentation": {}
     },
     {
-        "label": "GoogleSearchEngine",
-        "importPath": "app.services.search_engines.google_search",
-        "description": "app.services.search_engines.google_search",
+        "label": "JWTBearer",
+        "importPath": "app.services.auth.jwt_bearer",
+        "description": "app.services.auth.jwt_bearer",
         "isExtraImport": true,
-        "detail": "app.services.search_engines.google_search",
+        "detail": "app.services.auth.jwt_bearer",
         "documentation": {}
     },
     {
@@ -472,6 +504,23 @@
         "documentation": {}
     },
     {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "convert_pdf_to_text",
+        "importPath": "app.services.pdf_conversion.convert_pdf_to_text",
+        "description": "app.services.pdf_conversion.convert_pdf_to_text",
+        "isExtraImport": true,
+        "detail": "app.services.pdf_conversion.convert_pdf_to_text",
+        "documentation": {}
+    },
+    {
         "label": "HTTPBearer",
         "importPath": "fastapi.security",
         "description": "fastapi.security",
@@ -485,15 +534,6 @@
         "description": "fastapi.security",
         "isExtraImport": true,
         "detail": "fastapi.security",
-        "documentation": {}
-    },
-    {
-        "label": "os",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "os",
-        "description": "os",
-        "detail": "os",
         "documentation": {}
     },
     {
@@ -630,6 +670,14 @@
         "documentation": {}
     },
     {
+        "label": "pdf_conversion_router",
+        "importPath": "app.routers.pdf_to_text.pdf_to_text_router",
+        "description": "app.routers.pdf_to_text.pdf_to_text_router",
+        "isExtraImport": true,
+        "detail": "app.routers.pdf_to_text.pdf_to_text_router",
+        "documentation": {}
+    },
+    {
         "label": "unittest",
         "kind": 6,
         "isExtraImport": true,
@@ -639,14 +687,6 @@
         "documentation": {}
     },
     {
-        "label": "TestCase",
-        "importPath": "unittest",
-        "description": "unittest",
-        "isExtraImport": true,
-        "detail": "unittest",
-        "documentation": {}
-    },
-    {
         "label": "TestClient",
         "importPath": "fastapi.testclient",
         "description": "fastapi.testclient",
@@ -668,6 +708,22 @@
         "description": "fastapi.testclient",
         "isExtraImport": true,
         "detail": "fastapi.testclient",
+        "documentation": {}
+    },
+    {
+        "label": "TestClient",
+        "importPath": "fastapi.testclient",
+        "description": "fastapi.testclient",
+        "isExtraImport": true,
+        "detail": "fastapi.testclient",
+        "documentation": {}
+    },
+    {
+        "label": "app",
+        "importPath": "app.api",
+        "description": "app.api",
+        "isExtraImport": true,
+        "detail": "app.api",
         "documentation": {}
     },
     {
@@ -839,6 +895,24 @@
         "documentation": {}
     },
     {
+        "label": "pdf_conversion_router",
+        "kind": 5,
+        "importPath": "app.routers.pdf_to_text.pdf_to_text_router",
+        "description": "app.routers.pdf_to_text.pdf_to_text_router",
+        "peekOfCode": "pdf_conversion_router = CustomAPIRouter(\"convert-pdf\")\npdf_conversion_router.dependencies = [Depends(JWTBearer())]\n# Endpoint to receive and process the uploaded PDF file\n@pdf_conversion_router.post(\"/text/\")\nasync def upload_pdf_file(file: UploadFile = File(...)):\n    if not os.path.exists(\"uploads\"):\n        os.makedirs(\"uploads\")\n    file_path = os.path.join(\"uploads\", file.filename or \"\")\n    with open(file_path, \"wb\") as f:\n        f.write(await file.read())",
+        "detail": "app.routers.pdf_to_text.pdf_to_text_router",
+        "documentation": {}
+    },
+    {
+        "label": "pdf_conversion_router.dependencies",
+        "kind": 5,
+        "importPath": "app.routers.pdf_to_text.pdf_to_text_router",
+        "description": "app.routers.pdf_to_text.pdf_to_text_router",
+        "peekOfCode": "pdf_conversion_router.dependencies = [Depends(JWTBearer())]\n# Endpoint to receive and process the uploaded PDF file\n@pdf_conversion_router.post(\"/text/\")\nasync def upload_pdf_file(file: UploadFile = File(...)):\n    if not os.path.exists(\"uploads\"):\n        os.makedirs(\"uploads\")\n    file_path = os.path.join(\"uploads\", file.filename or \"\")\n    with open(file_path, \"wb\") as f:\n        f.write(await file.read())\n    text = convert_pdf_to_text(file_path)",
+        "detail": "app.routers.pdf_to_text.pdf_to_text_router",
+        "documentation": {}
+    },
+    {
         "label": "CustomAPIRouter",
         "kind": 6,
         "importPath": "app.routers.custom_api_router",
@@ -920,12 +994,12 @@
         "documentation": {}
     },
     {
-        "label": "convert_pdf_to_string",
+        "label": "convert_pdf_to_text",
         "kind": 2,
-        "importPath": "app.services.pdf_conversion.pdf_to_text",
-        "description": "app.services.pdf_conversion.pdf_to_text",
-        "peekOfCode": "def convert_pdf_to_string(filename: str) -> str:\n    \"\"\"\n    \"\"\"\n    with open(filename, 'rb') as file:\n        pdf = PyPDF2.PdfFileReader(file)\n        text = \"\"\n        for page in range(pdf.numPages):\n            text += pdf.getPage(page).extractText()\n    return text",
-        "detail": "app.services.pdf_conversion.pdf_to_text",
+        "importPath": "app.services.pdf_conversion.convert_pdf_to_text",
+        "description": "app.services.pdf_conversion.convert_pdf_to_text",
+        "peekOfCode": "def convert_pdf_to_text(filename: str) -> str:\n    \"\"\"\n    \"\"\"\n    with open(filename, 'rb') as file:\n        pdf = PyPDF2.PdfFileReader(file)\n        text = \"\"\n        for page in range(pdf.numPages):\n            text += pdf.getPage(page).extractText()\n    return text",
+        "detail": "app.services.pdf_conversion.convert_pdf_to_text",
         "documentation": {}
     },
     {
@@ -951,7 +1025,7 @@
         "kind": 5,
         "importPath": "app.api",
         "description": "app.api",
-        "peekOfCode": "app = FastAPI()\napp.include_router(auth_router)\napp.include_router(custom_search_router)\napp.include_router(name_extraction_router)\n@app.get('/')\nasync def welcome():\n    return {\n        \"title\": \"Name Search API\",\n        \"description\": \"Name extraction from pdf files and custom web search\",\n    }",
+        "peekOfCode": "app = FastAPI()\napp.include_router(auth_router)\napp.include_router(custom_search_router)\napp.include_router(name_extraction_router)\napp.include_router(pdf_conversion_router)\n@app.get('/')\nasync def welcome():\n    return {\n        \"title\": \"Name Search API\",\n        \"description\": \"Name extraction from pdf files and custom web search\",",
         "detail": "app.api",
         "documentation": {}
     },
@@ -983,12 +1057,12 @@
         "documentation": {}
     },
     {
-        "label": "GoogleSearchEngineTestCase",
+        "label": "TestPdfUploadAndConvert",
         "kind": 6,
-        "importPath": "tests.test_unit.test_services.test_google_service",
-        "description": "tests.test_unit.test_services.test_google_service",
-        "peekOfCode": "class GoogleSearchEngineTestCase(TestCase):\n    def test_if_gse_service_is_available(self) -> None:\n        words_to_search = [\"test1\", \"test2\", \"test3\"]\n        found_web_pages = GoogleSearchEngine.get_search_results(words_to_search)  \n        self.assertGreater(len(found_web_pages), 0)\n        self.assertIsInstance(found_web_pages[0], GoogleSearchResult)",
-        "detail": "tests.test_unit.test_services.test_google_service",
+        "importPath": "tests.test_api.test_pdf_conversion.test_pdf_conversion_api",
+        "description": "tests.test_api.test_pdf_conversion.test_pdf_conversion_api",
+        "peekOfCode": "class TestPdfUploadAndConvert(unittest.TestCase):\n    def setUp(self):\n        self.client = TestClient(app)\n    def test_pdf_conversion_api_requires_token(self) -> None:\n        response = self.client.post(\"/convert-pdf/text\")\n        self.assertEqual(response.status_code, status.HTTP_403_FORBIDDEN)\n    def test_upload_pdf_and_convert(self):\n        self.authenticate_client()\n        sample_pdf_content = b\"This is a sample PDF content.\"\n        with open(\"sample.pdf\", \"wb\") as f:",
+        "detail": "tests.test_api.test_pdf_conversion.test_pdf_conversion_api",
         "documentation": {}
     },
     {
