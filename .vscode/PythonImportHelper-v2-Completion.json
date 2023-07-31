@@ -1,0 +1,886 @@
+[
+    {
+        "label": "date",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "List",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Annotated",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "List",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Optional",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "List",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "List",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "BaseModel",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "BaseModel",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "BaseModel",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "SearchResult",
+        "importPath": "app.models.search_result.search_result",
+        "description": "app.models.search_result.search_result",
+        "isExtraImport": true,
+        "detail": "app.models.search_result.search_result",
+        "documentation": {}
+    },
+    {
+        "label": "SearchResult",
+        "importPath": "app.models.search_result.search_result",
+        "description": "app.models.search_result.search_result",
+        "isExtraImport": true,
+        "detail": "app.models.search_result.search_result",
+        "documentation": {}
+    },
+    {
+        "label": "EngineInfo",
+        "importPath": "app.models.search_result.search_result",
+        "description": "app.models.search_result.search_result",
+        "isExtraImport": true,
+        "detail": "app.models.search_result.search_result",
+        "documentation": {}
+    },
+    {
+        "label": "SearchResult",
+        "importPath": "app.models.search_result.search_result",
+        "description": "app.models.search_result.search_result",
+        "isExtraImport": true,
+        "detail": "app.models.search_result.search_result",
+        "documentation": {}
+    },
+    {
+        "label": "SearchResult",
+        "importPath": "app.models.search_result.search_result",
+        "description": "app.models.search_result.search_result",
+        "isExtraImport": true,
+        "detail": "app.models.search_result.search_result",
+        "documentation": {}
+    },
+    {
+        "label": "ABC",
+        "importPath": "abc",
+        "description": "abc",
+        "isExtraImport": true,
+        "detail": "abc",
+        "documentation": {}
+    },
+    {
+        "label": "abstractmethod",
+        "importPath": "abc",
+        "description": "abc",
+        "isExtraImport": true,
+        "detail": "abc",
+        "documentation": {}
+    },
+    {
+        "label": "ABC",
+        "importPath": "abc",
+        "description": "abc",
+        "isExtraImport": true,
+        "detail": "abc",
+        "documentation": {}
+    },
+    {
+        "label": "abstractmethod",
+        "importPath": "abc",
+        "description": "abc",
+        "isExtraImport": true,
+        "detail": "abc",
+        "documentation": {}
+    },
+    {
+        "label": "ABC",
+        "importPath": "abc",
+        "description": "abc",
+        "isExtraImport": true,
+        "detail": "abc",
+        "documentation": {}
+    },
+    {
+        "label": "abstractmethod",
+        "importPath": "abc",
+        "description": "abc",
+        "isExtraImport": true,
+        "detail": "abc",
+        "documentation": {}
+    },
+    {
+        "label": "HTTPException",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "Body",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "HTTPException",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "Body",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "Depends",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "APIRouter",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "status",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "Request",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "HTTPException",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "status",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "HTTPException",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "status",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "FastAPI",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "status",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "status",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "UserCredentials",
+        "importPath": "app.models.user",
+        "description": "app.models.user",
+        "isExtraImport": true,
+        "detail": "app.models.user",
+        "documentation": {}
+    },
+    {
+        "label": "UserCredentials",
+        "importPath": "app.models.user",
+        "description": "app.models.user",
+        "isExtraImport": true,
+        "detail": "app.models.user",
+        "documentation": {}
+    },
+    {
+        "label": "generate_jwt_token",
+        "importPath": "app.utilities.auth.jwt_handler",
+        "description": "app.utilities.auth.jwt_handler",
+        "isExtraImport": true,
+        "detail": "app.utilities.auth.jwt_handler",
+        "documentation": {}
+    },
+    {
+        "label": "decode_jwt_token",
+        "importPath": "app.utilities.auth.jwt_handler",
+        "description": "app.utilities.auth.jwt_handler",
+        "isExtraImport": true,
+        "detail": "app.utilities.auth.jwt_handler",
+        "documentation": {}
+    },
+    {
+        "label": "decode_jwt_token",
+        "importPath": "app.utilities.auth.jwt_handler",
+        "description": "app.utilities.auth.jwt_handler",
+        "isExtraImport": true,
+        "detail": "app.utilities.auth.jwt_handler",
+        "documentation": {}
+    },
+    {
+        "label": "generate_token_response",
+        "importPath": "app.routers.auth.auth_controller",
+        "description": "app.routers.auth.auth_controller",
+        "isExtraImport": true,
+        "detail": "app.routers.auth.auth_controller",
+        "documentation": {}
+    },
+    {
+        "label": "CustomAPIRouter",
+        "importPath": "app.routers.custom_api_router",
+        "description": "app.routers.custom_api_router",
+        "isExtraImport": true,
+        "detail": "app.routers.custom_api_router",
+        "documentation": {}
+    },
+    {
+        "label": "CustomAPIRouter",
+        "importPath": "app.routers.custom_api_router",
+        "description": "app.routers.custom_api_router",
+        "isExtraImport": true,
+        "detail": "app.routers.custom_api_router",
+        "documentation": {}
+    },
+    {
+        "label": "CustomAPIRouter",
+        "importPath": "app.routers.custom_api_router",
+        "description": "app.routers.custom_api_router",
+        "isExtraImport": true,
+        "detail": "app.routers.custom_api_router",
+        "documentation": {}
+    },
+    {
+        "label": "GoogleSearchResult",
+        "importPath": "app.models.search_result.google_search_result",
+        "description": "app.models.search_result.google_search_result",
+        "isExtraImport": true,
+        "detail": "app.models.search_result.google_search_result",
+        "documentation": {}
+    },
+    {
+        "label": "GoogleSearchResult",
+        "importPath": "app.models.search_result.google_search_result",
+        "description": "app.models.search_result.google_search_result",
+        "isExtraImport": true,
+        "detail": "app.models.search_result.google_search_result",
+        "documentation": {}
+    },
+    {
+        "label": "GoogleSearchResult",
+        "importPath": "app.models.search_result.google_search_result",
+        "description": "app.models.search_result.google_search_result",
+        "isExtraImport": true,
+        "detail": "app.models.search_result.google_search_result",
+        "documentation": {}
+    },
+    {
+        "label": "GoogleSearchResult",
+        "importPath": "app.models.search_result.google_search_result",
+        "description": "app.models.search_result.google_search_result",
+        "isExtraImport": true,
+        "detail": "app.models.search_result.google_search_result",
+        "documentation": {}
+    },
+    {
+        "label": "GoogleSearchEngine",
+        "importPath": "app.services.search_engines.google_search",
+        "description": "app.services.search_engines.google_search",
+        "isExtraImport": true,
+        "detail": "app.services.search_engines.google_search",
+        "documentation": {}
+    },
+    {
+        "label": "GoogleSearchEngine",
+        "importPath": "app.services.search_engines.google_search",
+        "description": "app.services.search_engines.google_search",
+        "isExtraImport": true,
+        "detail": "app.services.search_engines.google_search",
+        "documentation": {}
+    },
+    {
+        "label": "JWTBearer",
+        "importPath": "app.utilities.auth.jwt_bearer",
+        "description": "app.utilities.auth.jwt_bearer",
+        "isExtraImport": true,
+        "detail": "app.utilities.auth.jwt_bearer",
+        "documentation": {}
+    },
+    {
+        "label": "google_cse_router",
+        "importPath": "app.routers.custom_search.google_cse.google_cse_router",
+        "description": "app.routers.custom_search.google_cse.google_cse_router",
+        "isExtraImport": true,
+        "detail": "app.routers.custom_search.google_cse.google_cse_router",
+        "documentation": {}
+    },
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "psycopg2",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "psycopg2",
+        "description": "psycopg2",
+        "detail": "psycopg2",
+        "documentation": {}
+    },
+    {
+        "label": "contextmanager",
+        "importPath": "contextlib",
+        "description": "contextlib",
+        "isExtraImport": true,
+        "detail": "contextlib",
+        "documentation": {}
+    },
+    {
+        "label": "load_dotenv",
+        "importPath": "dotenv",
+        "description": "dotenv",
+        "isExtraImport": true,
+        "detail": "dotenv",
+        "documentation": {}
+    },
+    {
+        "label": "load_dotenv",
+        "importPath": "dotenv",
+        "description": "dotenv",
+        "isExtraImport": true,
+        "detail": "dotenv",
+        "documentation": {}
+    },
+    {
+        "label": "load_dotenv",
+        "importPath": "dotenv",
+        "description": "dotenv",
+        "isExtraImport": true,
+        "detail": "dotenv",
+        "documentation": {}
+    },
+    {
+        "label": "load_dotenv",
+        "importPath": "dotenv",
+        "description": "dotenv",
+        "isExtraImport": true,
+        "detail": "dotenv",
+        "documentation": {}
+    },
+    {
+        "label": "DBConnection",
+        "importPath": "app.services.db_connection.db_connection",
+        "description": "app.services.db_connection.db_connection",
+        "isExtraImport": true,
+        "detail": "app.services.db_connection.db_connection",
+        "documentation": {}
+    },
+    {
+        "label": "build",
+        "importPath": "googleapiclient.discovery",
+        "description": "googleapiclient.discovery",
+        "isExtraImport": true,
+        "detail": "googleapiclient.discovery",
+        "documentation": {}
+    },
+    {
+        "label": "SearchEngine",
+        "importPath": "app.services.search_engines.search_engine",
+        "description": "app.services.search_engines.search_engine",
+        "isExtraImport": true,
+        "detail": "app.services.search_engines.search_engine",
+        "documentation": {}
+    },
+    {
+        "label": "HTTPBearer",
+        "importPath": "fastapi.security",
+        "description": "fastapi.security",
+        "isExtraImport": true,
+        "detail": "fastapi.security",
+        "documentation": {}
+    },
+    {
+        "label": "HTTPAuthorizationCredentials",
+        "importPath": "fastapi.security",
+        "description": "fastapi.security",
+        "isExtraImport": true,
+        "detail": "fastapi.security",
+        "documentation": {}
+    },
+    {
+        "label": "jwt",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "jwt",
+        "description": "jwt",
+        "detail": "jwt",
+        "documentation": {}
+    },
+    {
+        "label": "PyPDF2",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "PyPDF2",
+        "description": "PyPDF2",
+        "detail": "PyPDF2",
+        "documentation": {}
+    },
+    {
+        "label": "custom_search_router",
+        "importPath": "app.routers.custom_search.custom_search_router",
+        "description": "app.routers.custom_search.custom_search_router",
+        "isExtraImport": true,
+        "detail": "app.routers.custom_search.custom_search_router",
+        "documentation": {}
+    },
+    {
+        "label": "auth_router",
+        "importPath": "app.routers.auth.auth_router",
+        "description": "app.routers.auth.auth_router",
+        "isExtraImport": true,
+        "detail": "app.routers.auth.auth_router",
+        "documentation": {}
+    },
+    {
+        "label": "unittest",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "unittest",
+        "description": "unittest",
+        "detail": "unittest",
+        "documentation": {}
+    },
+    {
+        "label": "TestCase",
+        "importPath": "unittest",
+        "description": "unittest",
+        "isExtraImport": true,
+        "detail": "unittest",
+        "documentation": {}
+    },
+    {
+        "label": "TestClient",
+        "importPath": "fastapi.testclient",
+        "description": "fastapi.testclient",
+        "isExtraImport": true,
+        "detail": "fastapi.testclient",
+        "documentation": {}
+    },
+    {
+        "label": "TestClient",
+        "importPath": "fastapi.testclient",
+        "description": "fastapi.testclient",
+        "isExtraImport": true,
+        "detail": "fastapi.testclient",
+        "documentation": {}
+    },
+    {
+        "label": "app",
+        "importPath": "app.api",
+        "description": "app.api",
+        "isExtraImport": true,
+        "detail": "app.api",
+        "documentation": {}
+    },
+    {
+        "label": "app",
+        "importPath": "app.api",
+        "description": "app.api",
+        "isExtraImport": true,
+        "detail": "app.api",
+        "documentation": {}
+    },
+    {
+        "label": "uvicorn",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "uvicorn",
+        "description": "uvicorn",
+        "detail": "uvicorn",
+        "documentation": {}
+    },
+    {
+        "label": "CustomSearch",
+        "kind": 6,
+        "importPath": "app.models.search_result.custom_search",
+        "description": "app.models.search_result.custom_search",
+        "peekOfCode": "class CustomSearch(BaseModel):\n    search_by: int = 0\n    result_records: int = 0\n    date_search: date\n    engine: int = 0\n    records: List[SearchResult] = []\nclass CustomSearchRecord(BaseModel):\n    record: SearchResult",
+        "detail": "app.models.search_result.custom_search",
+        "documentation": {}
+    },
+    {
+        "label": "CustomSearchRecord",
+        "kind": 6,
+        "importPath": "app.models.search_result.custom_search",
+        "description": "app.models.search_result.custom_search",
+        "peekOfCode": "class CustomSearchRecord(BaseModel):\n    record: SearchResult",
+        "detail": "app.models.search_result.custom_search",
+        "documentation": {}
+    },
+    {
+        "label": "GoogleSearchResult",
+        "kind": 6,
+        "importPath": "app.models.search_result.google_search_result",
+        "description": "app.models.search_result.google_search_result",
+        "peekOfCode": "class GoogleSearchResult(SearchResult):\n    \"\"\"\n        Pydantic Model for Google Custom Search Engine Results\n    \"\"\"\n    @staticmethod\n    def map_results(result: dict) -> \"GoogleSearchResult\":\n        return GoogleSearchResult(\n            title=result[\"title\"],\n            url=result[\"link\"],\n            snippet=result[\"snippet\"]",
+        "detail": "app.models.search_result.google_search_result",
+        "documentation": {}
+    },
+    {
+        "label": "SearchResult",
+        "kind": 6,
+        "importPath": "app.models.search_result.search_result",
+        "description": "app.models.search_result.search_result",
+        "peekOfCode": "class SearchResult(ABC, BaseModel):\n    title: str\n    url: str\n    snippet: str\n    def __str__(self) -> str:\n        return f\"title: {self.title}, url: {self.url}, snippet: {self.snippet}\"\n    @abstractmethod\n    def map_results(self, result: dict) -> None: ...\nclass EngineInfo(ABC, BaseModel):\n    status: str",
+        "detail": "app.models.search_result.search_result",
+        "documentation": {}
+    },
+    {
+        "label": "EngineInfo",
+        "kind": 6,
+        "importPath": "app.models.search_result.search_result",
+        "description": "app.models.search_result.search_result",
+        "peekOfCode": "class EngineInfo(ABC, BaseModel):\n    status: str\n    provider: str",
+        "detail": "app.models.search_result.search_result",
+        "documentation": {}
+    },
+    {
+        "label": "UserCredentials",
+        "kind": 6,
+        "importPath": "app.models.user",
+        "description": "app.models.user",
+        "peekOfCode": "class UserCredentials(BaseModel):\n    username: str\n    password: str",
+        "detail": "app.models.user",
+        "documentation": {}
+    },
+    {
+        "label": "validate_credentials",
+        "kind": 2,
+        "importPath": "app.routers.auth.auth_controller",
+        "description": "app.routers.auth.auth_controller",
+        "peekOfCode": "def validate_credentials(credentials: UserCredentials) -> bool:\n    return credentials.dict() == credentials_test\ndef generate_token_response(credentials: UserCredentials) -> dict: \n    if not validate_credentials(credentials):\n        raise HTTPException(status_code=401, detail=\"Invalid credentials\")\n    return generate_jwt_token(credentials.dict(),)",
+        "detail": "app.routers.auth.auth_controller",
+        "documentation": {}
+    },
+    {
+        "label": "generate_token_response",
+        "kind": 2,
+        "importPath": "app.routers.auth.auth_controller",
+        "description": "app.routers.auth.auth_controller",
+        "peekOfCode": "def generate_token_response(credentials: UserCredentials) -> dict: \n    if not validate_credentials(credentials):\n        raise HTTPException(status_code=401, detail=\"Invalid credentials\")\n    return generate_jwt_token(credentials.dict(),)",
+        "detail": "app.routers.auth.auth_controller",
+        "documentation": {}
+    },
+    {
+        "label": "credentials_test",
+        "kind": 5,
+        "importPath": "app.routers.auth.auth_controller",
+        "description": "app.routers.auth.auth_controller",
+        "peekOfCode": "credentials_test = {\n    \"username\": \"user@email.com\",\n    \"password\": \"password\"\n}\ndef validate_credentials(credentials: UserCredentials) -> bool:\n    return credentials.dict() == credentials_test\ndef generate_token_response(credentials: UserCredentials) -> dict: \n    if not validate_credentials(credentials):\n        raise HTTPException(status_code=401, detail=\"Invalid credentials\")\n    return generate_jwt_token(credentials.dict(),)",
+        "detail": "app.routers.auth.auth_controller",
+        "documentation": {}
+    },
+    {
+        "label": "auth_router",
+        "kind": 5,
+        "importPath": "app.routers.auth.auth_router",
+        "description": "app.routers.auth.auth_router",
+        "peekOfCode": "auth_router = CustomAPIRouter(\"auth\")\n@auth_router.post(\"/get-token\")\nasync def get_token(credentials: UserCredentials = Body(...)) -> dict:\n    return generate_token_response(credentials)",
+        "detail": "app.routers.auth.auth_router",
+        "documentation": {}
+    },
+    {
+        "label": "google_cse_router",
+        "kind": 5,
+        "importPath": "app.routers.custom_search.google_cse.google_cse_router",
+        "description": "app.routers.custom_search.google_cse.google_cse_router",
+        "peekOfCode": "google_cse_router = CustomAPIRouter(\"google-cse\")\ngoogle_cse_router.dependencies = [Depends(JWTBearer())]\n@google_cse_router.get(\"/\")\nasync def check_is_online() -> EngineInfo:\n    return {\n        \"status\": \"ready\",\n        \"provider\": \"google\",\n    } # type: ignore\n@google_cse_router.post(\"/\")\nasync def search_keywords(keywords: Annotated[list, Body(embed=True)] = []) -> List[GoogleSearchResult]:",
+        "detail": "app.routers.custom_search.google_cse.google_cse_router",
+        "documentation": {}
+    },
+    {
+        "label": "google_cse_router.dependencies",
+        "kind": 5,
+        "importPath": "app.routers.custom_search.google_cse.google_cse_router",
+        "description": "app.routers.custom_search.google_cse.google_cse_router",
+        "peekOfCode": "google_cse_router.dependencies = [Depends(JWTBearer())]\n@google_cse_router.get(\"/\")\nasync def check_is_online() -> EngineInfo:\n    return {\n        \"status\": \"ready\",\n        \"provider\": \"google\",\n    } # type: ignore\n@google_cse_router.post(\"/\")\nasync def search_keywords(keywords: Annotated[list, Body(embed=True)] = []) -> List[GoogleSearchResult]:\n    return GoogleSearchEngine.get_search_results(keywords)",
+        "detail": "app.routers.custom_search.google_cse.google_cse_router",
+        "documentation": {}
+    },
+    {
+        "label": "custom_search_router",
+        "kind": 5,
+        "importPath": "app.routers.custom_search.custom_search_router",
+        "description": "app.routers.custom_search.custom_search_router",
+        "peekOfCode": "custom_search_router = CustomAPIRouter(\"custom-search\")\ncustom_search_router.include_router(google_cse_router)\n@custom_search_router.get(\"/\")\nasync def custom_search_root():\n    return \"custom search\"",
+        "detail": "app.routers.custom_search.custom_search_router",
+        "documentation": {}
+    },
+    {
+        "label": "CustomAPIRouter",
+        "kind": 6,
+        "importPath": "app.routers.custom_api_router",
+        "description": "app.routers.custom_api_router",
+        "peekOfCode": "class CustomAPIRouter(APIRouter):\n    def __init__(self, prefix): \n        super(CustomAPIRouter, self).__init__(\n            prefix=f\"/{prefix}\",\n            tags=[prefix], # type: ignore\n            responses={\n                status.HTTP_404_NOT_FOUND: {\"description\": \"Not found\"},\n            },\n        )",
+        "detail": "app.routers.custom_api_router",
+        "documentation": {}
+    },
+    {
+        "label": "DBConnection",
+        "kind": 6,
+        "importPath": "app.services.db_connection.db_connection",
+        "description": "app.services.db_connection.db_connection",
+        "peekOfCode": "class DBConnection(ABC):\n    @abstractmethod\n    def connect(self) -> None: ...\n    @abstractmethod\n    def execute_query(self, query: str) -> Optional[list]: ...\n    @abstractmethod\n    def close(self) -> None: ...\n    @abstractmethod\n    def set_params_from_env(self) -> None: ...",
+        "detail": "app.services.db_connection.db_connection",
+        "documentation": {}
+    },
+    {
+        "label": "PostgreSQLConnection",
+        "kind": 6,
+        "importPath": "app.services.db_connection.postgres_connection",
+        "description": "app.services.db_connection.postgres_connection",
+        "peekOfCode": "class PostgreSQLConnection(DBConnection):\n    def __init__(self, db_name: str, user: str, password: str, host: str, port: str):\n        self.db_name: str = db_name\n        self.user: str = user\n        self.password: str = password\n        self.host: str = host\n        self.port: str = port\n    def set_params_from_env(self) -> None:\n        self.db_name = os.environ.get(\"POSTGRES_DB_NAME\", \"\")\n        self.user = os.environ.get(\"POSTGRES_USER\", \"\")",
+        "detail": "app.services.db_connection.postgres_connection",
+        "documentation": {}
+    },
+    {
+        "label": "GoogleSearchEngine",
+        "kind": 6,
+        "importPath": "app.services.search_engines.google_search",
+        "description": "app.services.search_engines.google_search",
+        "peekOfCode": "class GoogleSearchEngine(SearchEngine):\n    \"\"\"\n        Search engine service for consuming Google Custom Search API\n    \"\"\"\n    results_per_page: int = 10 \n    start_index: int = 1  \n    @staticmethod\n    def get_search_results(keywords: list) -> List[GoogleSearchResult]:\n        query = \" or \".join(keywords)    \n        return GoogleSearchEngine.execute_query(query)",
+        "detail": "app.services.search_engines.google_search",
+        "documentation": {}
+    },
+    {
+        "label": "SearchEngine",
+        "kind": 6,
+        "importPath": "app.services.search_engines.search_engine",
+        "description": "app.services.search_engines.search_engine",
+        "peekOfCode": "class SearchEngine(ABC):\n    @abstractmethod\n    def get_search_results(self, keywords: list) -> List[SearchResult]: ...\n    @abstractmethod\n    def execute_query(self, query: list) -> List[SearchResult]: ...",
+        "detail": "app.services.search_engines.search_engine",
+        "documentation": {}
+    },
+    {
+        "label": "JWTBearer",
+        "kind": 6,
+        "importPath": "app.utilities.auth.jwt_bearer",
+        "description": "app.utilities.auth.jwt_bearer",
+        "peekOfCode": "class JWTBearer(HTTPBearer):\n    def __init__(self, auto_error: bool = True):\n        super(JWTBearer, self).__init__(auto_error=auto_error)\n    async def __call__(self, request: Request):\n        credentials: HTTPAuthorizationCredentials | None = await super(JWTBearer, self).__call__(request)\n        if credentials:\n            if not credentials.scheme == \"Bearer\":\n                raise HTTPException(\n                    status_code=status.HTTP_401_UNAUTHORIZED, \n                    detail=\"Invalid authorization.\")",
+        "detail": "app.utilities.auth.jwt_bearer",
+        "documentation": {}
+    },
+    {
+        "label": "generate_jwt_token",
+        "kind": 2,
+        "importPath": "app.utilities.auth.jwt_handler",
+        "description": "app.utilities.auth.jwt_handler",
+        "peekOfCode": "def generate_jwt_token(payload: dict) -> dict:\n    \"\"\"Create a JWT token\"\"\"\n    return {\n        \"access_token\" : jwt.encode(payload, secret_key, algorithm)\n    }\ndef decode_jwt_token(token: str) -> dict:\n    try:\n        return dict(jwt.decode(token, secret_key, algorithms=[algorithm]))\n    except jwt.exceptions.ExpiredSignatureError:\n        raise HTTPException(",
+        "detail": "app.utilities.auth.jwt_handler",
+        "documentation": {}
+    },
+    {
+        "label": "decode_jwt_token",
+        "kind": 2,
+        "importPath": "app.utilities.auth.jwt_handler",
+        "description": "app.utilities.auth.jwt_handler",
+        "peekOfCode": "def decode_jwt_token(token: str) -> dict:\n    try:\n        return dict(jwt.decode(token, secret_key, algorithms=[algorithm]))\n    except jwt.exceptions.ExpiredSignatureError:\n        raise HTTPException(\n            status_code=status.HTTP_401_UNAUTHORIZED,\n            detail=\"Token has expired\")\n    except jwt.exceptions.DecodeError:\n        raise HTTPException(\n            status_code=status.HTTP_401_UNAUTHORIZED,",
+        "detail": "app.utilities.auth.jwt_handler",
+        "documentation": {}
+    },
+    {
+        "label": "secret_key",
+        "kind": 5,
+        "importPath": "app.utilities.auth.jwt_handler",
+        "description": "app.utilities.auth.jwt_handler",
+        "peekOfCode": "secret_key = os.environ.get(\"JWT_SECRET_KEY\", \"secret_key\")\nalgorithm = os.environ.get(\"JWT_ALGORITHM\", \"HS256\")\ndef generate_jwt_token(payload: dict) -> dict:\n    \"\"\"Create a JWT token\"\"\"\n    return {\n        \"access_token\" : jwt.encode(payload, secret_key, algorithm)\n    }\ndef decode_jwt_token(token: str) -> dict:\n    try:\n        return dict(jwt.decode(token, secret_key, algorithms=[algorithm]))",
+        "detail": "app.utilities.auth.jwt_handler",
+        "documentation": {}
+    },
+    {
+        "label": "algorithm",
+        "kind": 5,
+        "importPath": "app.utilities.auth.jwt_handler",
+        "description": "app.utilities.auth.jwt_handler",
+        "peekOfCode": "algorithm = os.environ.get(\"JWT_ALGORITHM\", \"HS256\")\ndef generate_jwt_token(payload: dict) -> dict:\n    \"\"\"Create a JWT token\"\"\"\n    return {\n        \"access_token\" : jwt.encode(payload, secret_key, algorithm)\n    }\ndef decode_jwt_token(token: str) -> dict:\n    try:\n        return dict(jwt.decode(token, secret_key, algorithms=[algorithm]))\n    except jwt.exceptions.ExpiredSignatureError:",
+        "detail": "app.utilities.auth.jwt_handler",
+        "documentation": {}
+    },
+    {
+        "label": "convert_pdf_to_string",
+        "kind": 2,
+        "importPath": "app.utilities.pdf_to_text",
+        "description": "app.utilities.pdf_to_text",
+        "peekOfCode": "def convert_pdf_to_string(filename: str) -> str:\n    \"\"\"\n    \"\"\"\n    with open(filename, 'rb') as file:\n        pdf = PyPDF2.PdfFileReader(file)\n        text = \"\"\n        for page in range(pdf.numPages):\n            text += pdf.getPage(page).extractText()\n    return text",
+        "detail": "app.utilities.pdf_to_text",
+        "documentation": {}
+    },
+    {
+        "label": "app",
+        "kind": 5,
+        "importPath": "app.api",
+        "description": "app.api",
+        "peekOfCode": "app = FastAPI()\napp.include_router(auth_router)\napp.include_router(custom_search_router)\n@app.get('/')\nasync def welcome():\n    return {\n        \"title\": \"Name Search API\",\n        \"description\": \"Name extraction from pdf files and custom web search\",\n    }",
+        "detail": "app.api",
+        "documentation": {}
+    },
+    {
+        "label": "JWTAuthTestCase",
+        "kind": 6,
+        "importPath": "tests.test_api.test_auth.test_auth_api",
+        "description": "tests.test_api.test_auth.test_auth_api",
+        "peekOfCode": "class JWTAuthTestCase(unittest.TestCase):\n    def setUp(self):\n        self.client = TestClient(app)\n    def test_if_jwt_token_is_retrieved(self):\n        credentials = {\n            \"username\": \"user@email.com\",\n            \"password\": \"password\"\n        }\n        response = self.client.post(\"/auth/get-token/\", json=credentials)\n        self.assertEqual(response.status_code, status.HTTP_200_OK)",
+        "detail": "tests.test_api.test_auth.test_auth_api",
+        "documentation": {}
+    },
+    {
+        "label": "CustomSearchTestCase",
+        "kind": 6,
+        "importPath": "tests.test_api.test_custom_seach.test_google_custom_search_api",
+        "description": "tests.test_api.test_custom_seach.test_google_custom_search_api",
+        "peekOfCode": "class CustomSearchTestCase(unittest.TestCase):\n    \"\"\"\n    Testing google se\n    \"\"\"\n    def setUp(self) -> None:\n        self.client: TestClient = TestClient(app)\n    def tearDown(self) -> None:\n        ...\n    def test_google_search_api_requires_token(self) -> None:\n        response = self.client.get(\"/custom-search/google-cse\")",
+        "detail": "tests.test_api.test_custom_seach.test_google_custom_search_api",
+        "documentation": {}
+    },
+    {
+        "label": "GoogleSearchEngineTestCase",
+        "kind": 6,
+        "importPath": "tests.test_unit.test_services.test_google_service",
+        "description": "tests.test_unit.test_services.test_google_service",
+        "peekOfCode": "class GoogleSearchEngineTestCase(TestCase):\n    def test_if_gse_service_is_available(self) -> None:\n        words_to_search = [\"test1\", \"test2\", \"test3\"]\n        found_web_pages = GoogleSearchEngine.get_search_results(words_to_search)  \n        self.assertGreater(len(found_web_pages), 0)\n        self.assertIsInstance(found_web_pages[0], GoogleSearchResult)",
+        "detail": "tests.test_unit.test_services.test_google_service",
+        "documentation": {}
+    },
+    {
+        "label": "port",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "port = int(os.environ.get('API_PORT', '5000'))\nhost = os.environ.get('API_HOST', '0.0.0.0')\nif __name__ == \"__main__\":\n    uvicorn.run(\"app.api:app\", host=host, port=port, reload=True)",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "host",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "host = os.environ.get('API_HOST', '0.0.0.0')\nif __name__ == \"__main__\":\n    uvicorn.run(\"app.api:app\", host=host, port=port, reload=True)",
+        "detail": "main",
+        "documentation": {}
+    }
+]
