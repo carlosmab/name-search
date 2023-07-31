@@ -3,7 +3,6 @@ from app.models.user import UserCredentials
 from app.services.auth.jwt_handler import generate_jwt_token
 
 
-
 credentials_test = {
     "username": "user@email.com",
     "password": "password"
