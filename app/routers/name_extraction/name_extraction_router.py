@@ -9,5 +9,5 @@ name_extraction_router.dependencies = [Depends(JWTBearer())]
 
 @name_extraction_router.post("/")
 async def extract_names(text: Annotated[str, Body(embed=True)] = "") -> dict:   
-    names = await extract_names_from_text(text)
+    names = extract_names_from_text(text)
     return {"names": names} 

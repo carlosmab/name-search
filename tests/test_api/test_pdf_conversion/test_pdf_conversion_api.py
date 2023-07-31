@@ -2,10 +2,12 @@ import os
 import unittest
 from fastapi.testclient import TestClient
 from fastapi import status
+from reportlab.pdfgen import canvas
+from reportlab.lib.pagesizes import letter
 from app.api import app   
 
 
-class TestPdfUploadAndConvert(unittest.TestCase):
+class PdfConversionAPITestCase(unittest.TestCase):
     def setUp(self):
         self.client = TestClient(app)
 
@@ -17,16 +19,14 @@ class TestPdfUploadAndConvert(unittest.TestCase):
     def test_upload_pdf_and_convert(self):
         self.authenticate_client()
         
-        sample_pdf_content = b"This is a sample PDF content."
-        with open("sample.pdf", "wb") as f:
-            f.write(sample_pdf_content)
+        self.create_sample_pdf("sample.pdf")
 
         with open("sample.pdf", "rb") as f:
             response = self.client.post("/convert-pdf/text", files={"file": ("sample.pdf", f)})
 
         self.assertEqual(response.status_code, 200)
 
-        expected_text = "This is the text extracted from the PDF."
+        expected_text = "This is the text extracted from the PDF.\n"
         self.assertEqual(response.json()["text"], expected_text)
         
         os.remove("sample.pdf")
@@ -40,3 +40,8 @@ class TestPdfUploadAndConvert(unittest.TestCase):
         response = self.client.post("auth/get-token", json=credentials)
         token = response.json().get("access_token")
         self.client.headers = {"Authorization": f"Bearer {token}"}
+        
+    def create_sample_pdf(self, file_path):
+        c = canvas.Canvas(file_path, pagesize=letter)
+        c.drawString(100, 700, "This is the text extracted from the PDF.")
+        c.save()

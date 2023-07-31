@@ -587,15 +587,6 @@
         "documentation": {}
     },
     {
-        "label": "asyncio",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "asyncio",
-        "description": "asyncio",
-        "detail": "asyncio",
-        "documentation": {}
-    },
-    {
         "label": "psycopg2",
         "kind": 6,
         "isExtraImport": true,
@@ -751,6 +742,22 @@
         "documentation": {}
     },
     {
+        "label": "canvas",
+        "importPath": "reportlab.pdfgen",
+        "description": "reportlab.pdfgen",
+        "isExtraImport": true,
+        "detail": "reportlab.pdfgen",
+        "documentation": {}
+    },
+    {
+        "label": "letter",
+        "importPath": "reportlab.lib.pagesizes",
+        "description": "reportlab.lib.pagesizes",
+        "isExtraImport": true,
+        "detail": "reportlab.lib.pagesizes",
+        "documentation": {}
+    },
+    {
         "label": "uvicorn",
         "kind": 6,
         "isExtraImport": true,
@@ -881,7 +888,7 @@
         "kind": 5,
         "importPath": "app.routers.name_extraction.name_extraction_router",
         "description": "app.routers.name_extraction.name_extraction_router",
-        "peekOfCode": "name_extraction_router = CustomAPIRouter(\"extract-names\")\nname_extraction_router.dependencies = [Depends(JWTBearer())]\n@name_extraction_router.post(\"/\")\nasync def extract_names(text: Annotated[str, Body(embed=True)] = \"\") -> dict:   \n    names = await extract_names_from_text(text)\n    return {\"names\": names}",
+        "peekOfCode": "name_extraction_router = CustomAPIRouter(\"extract-names\")\nname_extraction_router.dependencies = [Depends(JWTBearer())]\n@name_extraction_router.post(\"/\")\nasync def extract_names(text: Annotated[str, Body(embed=True)] = \"\") -> dict:   \n    names = extract_names_from_text(text)\n    return {\"names\": names}",
         "detail": "app.routers.name_extraction.name_extraction_router",
         "documentation": {}
     },
@@ -890,7 +897,7 @@
         "kind": 5,
         "importPath": "app.routers.name_extraction.name_extraction_router",
         "description": "app.routers.name_extraction.name_extraction_router",
-        "peekOfCode": "name_extraction_router.dependencies = [Depends(JWTBearer())]\n@name_extraction_router.post(\"/\")\nasync def extract_names(text: Annotated[str, Body(embed=True)] = \"\") -> dict:   \n    names = await extract_names_from_text(text)\n    return {\"names\": names}",
+        "peekOfCode": "name_extraction_router.dependencies = [Depends(JWTBearer())]\n@name_extraction_router.post(\"/\")\nasync def extract_names(text: Annotated[str, Body(embed=True)] = \"\") -> dict:   \n    names = extract_names_from_text(text)\n    return {\"names\": names}",
         "detail": "app.routers.name_extraction.name_extraction_router",
         "documentation": {}
     },
@@ -967,11 +974,20 @@
         "documentation": {}
     },
     {
+        "label": "extract_names_from_text",
+        "kind": 2,
+        "importPath": "app.services.data_processing.name_extraction",
+        "description": "app.services.data_processing.name_extraction",
+        "peekOfCode": "def extract_names_from_text(text: str) -> list[str]:\n    doc = nlp(text)\n    names = [ent.text for ent in doc.ents if ent.label_ == \"PERSON\"]\n    return names",
+        "detail": "app.services.data_processing.name_extraction",
+        "documentation": {}
+    },
+    {
         "label": "nlp",
         "kind": 5,
         "importPath": "app.services.data_processing.name_extraction",
         "description": "app.services.data_processing.name_extraction",
-        "peekOfCode": "nlp = spacy.load(\"en_core_web_sm\")\nasync def extract_names_from_text(text: str) -> list[str]:\n    doc = nlp(text)\n    names = [ent.text for ent in doc.ents if ent.label_ == \"PERSON\"]\n    return names",
+        "peekOfCode": "nlp = spacy.load(\"en_core_web_sm\")\ndef extract_names_from_text(text: str) -> list[str]:\n    doc = nlp(text)\n    names = [ent.text for ent in doc.ents if ent.label_ == \"PERSON\"]\n    return names",
         "detail": "app.services.data_processing.name_extraction",
         "documentation": {}
     },
@@ -998,7 +1014,7 @@
         "kind": 2,
         "importPath": "app.services.pdf_conversion.convert_pdf_to_text",
         "description": "app.services.pdf_conversion.convert_pdf_to_text",
-        "peekOfCode": "def convert_pdf_to_text(filename: str) -> str:\n    \"\"\"\n    \"\"\"\n    with open(filename, 'rb') as file:\n        pdf = PyPDF2.PdfFileReader(file)\n        text = \"\"\n        for page in range(pdf.numPages):\n            text += pdf.getPage(page).extractText()\n    return text",
+        "peekOfCode": "def convert_pdf_to_text(file_path):\n    text = \"\"\n    with open(file_path, \"rb\") as file:\n        pdf_reader = PyPDF2.PdfReader(file)\n        num_pages = len(pdf_reader.pages)\n        for page_num in range(num_pages):\n            page = pdf_reader.pages[page_num]\n            text += page.extract_text()\n    return text",
         "detail": "app.services.pdf_conversion.convert_pdf_to_text",
         "documentation": {}
     },
@@ -1057,11 +1073,11 @@
         "documentation": {}
     },
     {
-        "label": "TestPdfUploadAndConvert",
+        "label": "PdfConversionAPITestCase",
         "kind": 6,
         "importPath": "tests.test_api.test_pdf_conversion.test_pdf_conversion_api",
         "description": "tests.test_api.test_pdf_conversion.test_pdf_conversion_api",
-        "peekOfCode": "class TestPdfUploadAndConvert(unittest.TestCase):\n    def setUp(self):\n        self.client = TestClient(app)\n    def test_pdf_conversion_api_requires_token(self) -> None:\n        response = self.client.post(\"/convert-pdf/text\")\n        self.assertEqual(response.status_code, status.HTTP_403_FORBIDDEN)\n    def test_upload_pdf_and_convert(self):\n        self.authenticate_client()\n        sample_pdf_content = b\"This is a sample PDF content.\"\n        with open(\"sample.pdf\", \"wb\") as f:",
+        "peekOfCode": "class PdfConversionAPITestCase(unittest.TestCase):\n    def setUp(self):\n        self.client = TestClient(app)\n    def test_pdf_conversion_api_requires_token(self) -> None:\n        response = self.client.post(\"/convert-pdf/text\")\n        self.assertEqual(response.status_code, status.HTTP_403_FORBIDDEN)\n    def test_upload_pdf_and_convert(self):\n        self.authenticate_client()\n        self.create_sample_pdf(\"sample.pdf\")\n        with open(\"sample.pdf\", \"rb\") as f:",
         "detail": "tests.test_api.test_pdf_conversion.test_pdf_conversion_api",
         "documentation": {}
     },
