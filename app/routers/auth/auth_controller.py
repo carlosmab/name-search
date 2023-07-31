@@ -1,6 +1,7 @@
 from fastapi import HTTPException
 from app.models.user import UserCredentials
-from app.utilities.auth.jwt_handler import generate_jwt_token
+from app.services.auth.jwt_handler import generate_jwt_token
+
 
 
 credentials_test = {

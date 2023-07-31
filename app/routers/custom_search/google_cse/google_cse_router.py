@@ -5,13 +5,11 @@ from fastapi import Body, Depends
 from app.models.search_result.google_search_result import GoogleSearchResult
 from app.models.search_result.search_result import EngineInfo, SearchResult
 from app.routers.custom_api_router import CustomAPIRouter
+from app.services.auth.jwt_bearer import JWTBearer
 from app.services.search_engines.google_search import GoogleSearchEngine
-from app.utilities.auth.jwt_bearer import JWTBearer
-
 
 google_cse_router = CustomAPIRouter("google-cse")
 google_cse_router.dependencies = [Depends(JWTBearer())]
-
 
 @google_cse_router.get("/")
 async def check_is_online() -> EngineInfo:

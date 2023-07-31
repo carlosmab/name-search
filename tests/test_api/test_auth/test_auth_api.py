@@ -2,7 +2,6 @@ import unittest
 from fastapi.testclient import TestClient
 from fastapi import status
 from app.api import app
-from app.utilities.auth.jwt_handler import decode_jwt_token
 
 
 class JWTAuthTestCase(unittest.TestCase):

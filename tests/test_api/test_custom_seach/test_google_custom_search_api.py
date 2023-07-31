@@ -7,7 +7,7 @@ from app.models.search_result.google_search_result import GoogleSearchResult
 
 class CustomSearchTestCase(unittest.TestCase):
     """
-    Testing google se
+    Testing google se endpint
     """
     
     def setUp(self) -> None:
@@ -55,6 +55,5 @@ class CustomSearchTestCase(unittest.TestCase):
             "password": "password"
         }
         response = self.client.post("auth/get-token", json=credentials)
-        print(response.json())
         token = response.json().get("access_token")
         self.client.headers = {"Authorization": f"Bearer {token}"}

@@ -32,6 +32,14 @@
         "documentation": {}
     },
     {
+        "label": "Annotated",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
         "label": "Optional",
         "importPath": "typing",
         "description": "typing",
@@ -208,6 +216,22 @@
         "documentation": {}
     },
     {
+        "label": "Body",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "Depends",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
         "label": "APIRouter",
         "importPath": "fastapi",
         "description": "fastapi",
@@ -288,6 +312,14 @@
         "documentation": {}
     },
     {
+        "label": "status",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
         "label": "UserCredentials",
         "importPath": "app.models.user",
         "description": "app.models.user",
@@ -305,26 +337,18 @@
     },
     {
         "label": "generate_jwt_token",
-        "importPath": "app.utilities.auth.jwt_handler",
-        "description": "app.utilities.auth.jwt_handler",
+        "importPath": "app.services.auth.jwt_handler",
+        "description": "app.services.auth.jwt_handler",
         "isExtraImport": true,
-        "detail": "app.utilities.auth.jwt_handler",
+        "detail": "app.services.auth.jwt_handler",
         "documentation": {}
     },
     {
         "label": "decode_jwt_token",
-        "importPath": "app.utilities.auth.jwt_handler",
-        "description": "app.utilities.auth.jwt_handler",
+        "importPath": "app.services.auth.jwt_handler",
+        "description": "app.services.auth.jwt_handler",
         "isExtraImport": true,
-        "detail": "app.utilities.auth.jwt_handler",
-        "documentation": {}
-    },
-    {
-        "label": "decode_jwt_token",
-        "importPath": "app.utilities.auth.jwt_handler",
-        "description": "app.utilities.auth.jwt_handler",
-        "isExtraImport": true,
-        "detail": "app.utilities.auth.jwt_handler",
+        "detail": "app.services.auth.jwt_handler",
         "documentation": {}
     },
     {
@@ -360,11 +384,11 @@
         "documentation": {}
     },
     {
-        "label": "GoogleSearchResult",
-        "importPath": "app.models.search_result.google_search_result",
-        "description": "app.models.search_result.google_search_result",
+        "label": "CustomAPIRouter",
+        "importPath": "app.routers.custom_api_router",
+        "description": "app.routers.custom_api_router",
         "isExtraImport": true,
-        "detail": "app.models.search_result.google_search_result",
+        "detail": "app.routers.custom_api_router",
         "documentation": {}
     },
     {
@@ -392,27 +416,43 @@
         "documentation": {}
     },
     {
-        "label": "GoogleSearchEngine",
-        "importPath": "app.services.search_engines.google_search",
-        "description": "app.services.search_engines.google_search",
+        "label": "GoogleSearchResult",
+        "importPath": "app.models.search_result.google_search_result",
+        "description": "app.models.search_result.google_search_result",
         "isExtraImport": true,
-        "detail": "app.services.search_engines.google_search",
-        "documentation": {}
-    },
-    {
-        "label": "GoogleSearchEngine",
-        "importPath": "app.services.search_engines.google_search",
-        "description": "app.services.search_engines.google_search",
-        "isExtraImport": true,
-        "detail": "app.services.search_engines.google_search",
+        "detail": "app.models.search_result.google_search_result",
         "documentation": {}
     },
     {
         "label": "JWTBearer",
-        "importPath": "app.utilities.auth.jwt_bearer",
-        "description": "app.utilities.auth.jwt_bearer",
+        "importPath": "app.services.auth.jwt_bearer",
+        "description": "app.services.auth.jwt_bearer",
         "isExtraImport": true,
-        "detail": "app.utilities.auth.jwt_bearer",
+        "detail": "app.services.auth.jwt_bearer",
+        "documentation": {}
+    },
+    {
+        "label": "JWTBearer",
+        "importPath": "app.services.auth.jwt_bearer",
+        "description": "app.services.auth.jwt_bearer",
+        "isExtraImport": true,
+        "detail": "app.services.auth.jwt_bearer",
+        "documentation": {}
+    },
+    {
+        "label": "GoogleSearchEngine",
+        "importPath": "app.services.search_engines.google_search",
+        "description": "app.services.search_engines.google_search",
+        "isExtraImport": true,
+        "detail": "app.services.search_engines.google_search",
+        "documentation": {}
+    },
+    {
+        "label": "GoogleSearchEngine",
+        "importPath": "app.services.search_engines.google_search",
+        "description": "app.services.search_engines.google_search",
+        "isExtraImport": true,
+        "detail": "app.services.search_engines.google_search",
         "documentation": {}
     },
     {
@@ -424,12 +464,95 @@
         "documentation": {}
     },
     {
+        "label": "extract_names_from_text",
+        "importPath": "app.services.data_processing.name_extraction",
+        "description": "app.services.data_processing.name_extraction",
+        "isExtraImport": true,
+        "detail": "app.services.data_processing.name_extraction",
+        "documentation": {}
+    },
+    {
+        "label": "HTTPBearer",
+        "importPath": "fastapi.security",
+        "description": "fastapi.security",
+        "isExtraImport": true,
+        "detail": "fastapi.security",
+        "documentation": {}
+    },
+    {
+        "label": "HTTPAuthorizationCredentials",
+        "importPath": "fastapi.security",
+        "description": "fastapi.security",
+        "isExtraImport": true,
+        "detail": "fastapi.security",
+        "documentation": {}
+    },
+    {
         "label": "os",
         "kind": 6,
         "isExtraImport": true,
         "importPath": "os",
         "description": "os",
         "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "jwt",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "jwt",
+        "description": "jwt",
+        "detail": "jwt",
+        "documentation": {}
+    },
+    {
+        "label": "load_dotenv",
+        "importPath": "dotenv",
+        "description": "dotenv",
+        "isExtraImport": true,
+        "detail": "dotenv",
+        "documentation": {}
+    },
+    {
+        "label": "load_dotenv",
+        "importPath": "dotenv",
+        "description": "dotenv",
+        "isExtraImport": true,
+        "detail": "dotenv",
+        "documentation": {}
+    },
+    {
+        "label": "load_dotenv",
+        "importPath": "dotenv",
+        "description": "dotenv",
+        "isExtraImport": true,
+        "detail": "dotenv",
+        "documentation": {}
+    },
+    {
+        "label": "load_dotenv",
+        "importPath": "dotenv",
+        "description": "dotenv",
+        "isExtraImport": true,
+        "detail": "dotenv",
+        "documentation": {}
+    },
+    {
+        "label": "spacy",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "spacy",
+        "description": "spacy",
+        "detail": "spacy",
+        "documentation": {}
+    },
+    {
+        "label": "asyncio",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "asyncio",
+        "description": "asyncio",
+        "detail": "asyncio",
         "documentation": {}
     },
     {
@@ -450,43 +573,20 @@
         "documentation": {}
     },
     {
-        "label": "load_dotenv",
-        "importPath": "dotenv",
-        "description": "dotenv",
-        "isExtraImport": true,
-        "detail": "dotenv",
-        "documentation": {}
-    },
-    {
-        "label": "load_dotenv",
-        "importPath": "dotenv",
-        "description": "dotenv",
-        "isExtraImport": true,
-        "detail": "dotenv",
-        "documentation": {}
-    },
-    {
-        "label": "load_dotenv",
-        "importPath": "dotenv",
-        "description": "dotenv",
-        "isExtraImport": true,
-        "detail": "dotenv",
-        "documentation": {}
-    },
-    {
-        "label": "load_dotenv",
-        "importPath": "dotenv",
-        "description": "dotenv",
-        "isExtraImport": true,
-        "detail": "dotenv",
-        "documentation": {}
-    },
-    {
         "label": "DBConnection",
         "importPath": "app.services.db_connection.db_connection",
         "description": "app.services.db_connection.db_connection",
         "isExtraImport": true,
         "detail": "app.services.db_connection.db_connection",
+        "documentation": {}
+    },
+    {
+        "label": "PyPDF2",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "PyPDF2",
+        "description": "PyPDF2",
+        "detail": "PyPDF2",
         "documentation": {}
     },
     {
@@ -506,40 +606,6 @@
         "documentation": {}
     },
     {
-        "label": "HTTPBearer",
-        "importPath": "fastapi.security",
-        "description": "fastapi.security",
-        "isExtraImport": true,
-        "detail": "fastapi.security",
-        "documentation": {}
-    },
-    {
-        "label": "HTTPAuthorizationCredentials",
-        "importPath": "fastapi.security",
-        "description": "fastapi.security",
-        "isExtraImport": true,
-        "detail": "fastapi.security",
-        "documentation": {}
-    },
-    {
-        "label": "jwt",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "jwt",
-        "description": "jwt",
-        "detail": "jwt",
-        "documentation": {}
-    },
-    {
-        "label": "PyPDF2",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "PyPDF2",
-        "description": "PyPDF2",
-        "detail": "PyPDF2",
-        "documentation": {}
-    },
-    {
         "label": "custom_search_router",
         "importPath": "app.routers.custom_search.custom_search_router",
         "description": "app.routers.custom_search.custom_search_router",
@@ -553,6 +619,14 @@
         "description": "app.routers.auth.auth_router",
         "isExtraImport": true,
         "detail": "app.routers.auth.auth_router",
+        "documentation": {}
+    },
+    {
+        "label": "name_extraction_router",
+        "importPath": "app.routers.name_extraction.name_extraction_router",
+        "description": "app.routers.name_extraction.name_extraction_router",
+        "isExtraImport": true,
+        "detail": "app.routers.name_extraction.name_extraction_router",
         "documentation": {}
     },
     {
@@ -586,6 +660,22 @@
         "description": "fastapi.testclient",
         "isExtraImport": true,
         "detail": "fastapi.testclient",
+        "documentation": {}
+    },
+    {
+        "label": "TestClient",
+        "importPath": "fastapi.testclient",
+        "description": "fastapi.testclient",
+        "isExtraImport": true,
+        "detail": "fastapi.testclient",
+        "documentation": {}
+    },
+    {
+        "label": "app",
+        "importPath": "app.api",
+        "description": "app.api",
+        "isExtraImport": true,
+        "detail": "app.api",
         "documentation": {}
     },
     {
@@ -731,12 +821,84 @@
         "documentation": {}
     },
     {
+        "label": "name_extraction_router",
+        "kind": 5,
+        "importPath": "app.routers.name_extraction.name_extraction_router",
+        "description": "app.routers.name_extraction.name_extraction_router",
+        "peekOfCode": "name_extraction_router = CustomAPIRouter(\"extract-names\")\nname_extraction_router.dependencies = [Depends(JWTBearer())]\n@name_extraction_router.post(\"/\")\nasync def extract_names(text: Annotated[str, Body(embed=True)] = \"\") -> dict:   \n    names = await extract_names_from_text(text)\n    return {\"names\": names}",
+        "detail": "app.routers.name_extraction.name_extraction_router",
+        "documentation": {}
+    },
+    {
+        "label": "name_extraction_router.dependencies",
+        "kind": 5,
+        "importPath": "app.routers.name_extraction.name_extraction_router",
+        "description": "app.routers.name_extraction.name_extraction_router",
+        "peekOfCode": "name_extraction_router.dependencies = [Depends(JWTBearer())]\n@name_extraction_router.post(\"/\")\nasync def extract_names(text: Annotated[str, Body(embed=True)] = \"\") -> dict:   \n    names = await extract_names_from_text(text)\n    return {\"names\": names}",
+        "detail": "app.routers.name_extraction.name_extraction_router",
+        "documentation": {}
+    },
+    {
         "label": "CustomAPIRouter",
         "kind": 6,
         "importPath": "app.routers.custom_api_router",
         "description": "app.routers.custom_api_router",
         "peekOfCode": "class CustomAPIRouter(APIRouter):\n    def __init__(self, prefix): \n        super(CustomAPIRouter, self).__init__(\n            prefix=f\"/{prefix}\",\n            tags=[prefix], # type: ignore\n            responses={\n                status.HTTP_404_NOT_FOUND: {\"description\": \"Not found\"},\n            },\n        )",
         "detail": "app.routers.custom_api_router",
+        "documentation": {}
+    },
+    {
+        "label": "JWTBearer",
+        "kind": 6,
+        "importPath": "app.services.auth.jwt_bearer",
+        "description": "app.services.auth.jwt_bearer",
+        "peekOfCode": "class JWTBearer(HTTPBearer):\n    def __init__(self, auto_error: bool = True):\n        super(JWTBearer, self).__init__(auto_error=auto_error)\n    async def __call__(self, request: Request):\n        credentials: HTTPAuthorizationCredentials | None = await super(JWTBearer, self).__call__(request)\n        if credentials:\n            if not credentials.scheme == \"Bearer\":\n                raise HTTPException(\n                    status_code=status.HTTP_401_UNAUTHORIZED, \n                    detail=\"Invalid authorization.\")",
+        "detail": "app.services.auth.jwt_bearer",
+        "documentation": {}
+    },
+    {
+        "label": "generate_jwt_token",
+        "kind": 2,
+        "importPath": "app.services.auth.jwt_handler",
+        "description": "app.services.auth.jwt_handler",
+        "peekOfCode": "def generate_jwt_token(payload: dict) -> dict:\n    \"\"\"Create a JWT token\"\"\"\n    return {\n        \"access_token\" : jwt.encode(payload, secret_key, algorithm)\n    }\ndef decode_jwt_token(token: str) -> dict:\n    try:\n        return dict(jwt.decode(token, secret_key, algorithms=[algorithm]))\n    except jwt.exceptions.ExpiredSignatureError:\n        raise HTTPException(",
+        "detail": "app.services.auth.jwt_handler",
+        "documentation": {}
+    },
+    {
+        "label": "decode_jwt_token",
+        "kind": 2,
+        "importPath": "app.services.auth.jwt_handler",
+        "description": "app.services.auth.jwt_handler",
+        "peekOfCode": "def decode_jwt_token(token: str) -> dict:\n    try:\n        return dict(jwt.decode(token, secret_key, algorithms=[algorithm]))\n    except jwt.exceptions.ExpiredSignatureError:\n        raise HTTPException(\n            status_code=status.HTTP_401_UNAUTHORIZED,\n            detail=\"Token has expired\")\n    except jwt.exceptions.DecodeError:\n        raise HTTPException(\n            status_code=status.HTTP_401_UNAUTHORIZED,",
+        "detail": "app.services.auth.jwt_handler",
+        "documentation": {}
+    },
+    {
+        "label": "secret_key",
+        "kind": 5,
+        "importPath": "app.services.auth.jwt_handler",
+        "description": "app.services.auth.jwt_handler",
+        "peekOfCode": "secret_key = os.environ.get(\"JWT_SECRET_KEY\", \"secret_key\")\nalgorithm = os.environ.get(\"JWT_ALGORITHM\", \"HS256\")\ndef generate_jwt_token(payload: dict) -> dict:\n    \"\"\"Create a JWT token\"\"\"\n    return {\n        \"access_token\" : jwt.encode(payload, secret_key, algorithm)\n    }\ndef decode_jwt_token(token: str) -> dict:\n    try:\n        return dict(jwt.decode(token, secret_key, algorithms=[algorithm]))",
+        "detail": "app.services.auth.jwt_handler",
+        "documentation": {}
+    },
+    {
+        "label": "algorithm",
+        "kind": 5,
+        "importPath": "app.services.auth.jwt_handler",
+        "description": "app.services.auth.jwt_handler",
+        "peekOfCode": "algorithm = os.environ.get(\"JWT_ALGORITHM\", \"HS256\")\ndef generate_jwt_token(payload: dict) -> dict:\n    \"\"\"Create a JWT token\"\"\"\n    return {\n        \"access_token\" : jwt.encode(payload, secret_key, algorithm)\n    }\ndef decode_jwt_token(token: str) -> dict:\n    try:\n        return dict(jwt.decode(token, secret_key, algorithms=[algorithm]))\n    except jwt.exceptions.ExpiredSignatureError:",
+        "detail": "app.services.auth.jwt_handler",
+        "documentation": {}
+    },
+    {
+        "label": "nlp",
+        "kind": 5,
+        "importPath": "app.services.data_processing.name_extraction",
+        "description": "app.services.data_processing.name_extraction",
+        "peekOfCode": "nlp = spacy.load(\"en_core_web_sm\")\nasync def extract_names_from_text(text: str) -> list[str]:\n    doc = nlp(text)\n    names = [ent.text for ent in doc.ents if ent.label_ == \"PERSON\"]\n    return names",
+        "detail": "app.services.data_processing.name_extraction",
         "documentation": {}
     },
     {
@@ -758,6 +920,15 @@
         "documentation": {}
     },
     {
+        "label": "convert_pdf_to_string",
+        "kind": 2,
+        "importPath": "app.services.pdf_conversion.pdf_to_text",
+        "description": "app.services.pdf_conversion.pdf_to_text",
+        "peekOfCode": "def convert_pdf_to_string(filename: str) -> str:\n    \"\"\"\n    \"\"\"\n    with open(filename, 'rb') as file:\n        pdf = PyPDF2.PdfFileReader(file)\n        text = \"\"\n        for page in range(pdf.numPages):\n            text += pdf.getPage(page).extractText()\n    return text",
+        "detail": "app.services.pdf_conversion.pdf_to_text",
+        "documentation": {}
+    },
+    {
         "label": "GoogleSearchEngine",
         "kind": 6,
         "importPath": "app.services.search_engines.google_search",
@@ -776,65 +947,11 @@
         "documentation": {}
     },
     {
-        "label": "JWTBearer",
-        "kind": 6,
-        "importPath": "app.utilities.auth.jwt_bearer",
-        "description": "app.utilities.auth.jwt_bearer",
-        "peekOfCode": "class JWTBearer(HTTPBearer):\n    def __init__(self, auto_error: bool = True):\n        super(JWTBearer, self).__init__(auto_error=auto_error)\n    async def __call__(self, request: Request):\n        credentials: HTTPAuthorizationCredentials | None = await super(JWTBearer, self).__call__(request)\n        if credentials:\n            if not credentials.scheme == \"Bearer\":\n                raise HTTPException(\n                    status_code=status.HTTP_401_UNAUTHORIZED, \n                    detail=\"Invalid authorization.\")",
-        "detail": "app.utilities.auth.jwt_bearer",
-        "documentation": {}
-    },
-    {
-        "label": "generate_jwt_token",
-        "kind": 2,
-        "importPath": "app.utilities.auth.jwt_handler",
-        "description": "app.utilities.auth.jwt_handler",
-        "peekOfCode": "def generate_jwt_token(payload: dict) -> dict:\n    \"\"\"Create a JWT token\"\"\"\n    return {\n        \"access_token\" : jwt.encode(payload, secret_key, algorithm)\n    }\ndef decode_jwt_token(token: str) -> dict:\n    try:\n        return dict(jwt.decode(token, secret_key, algorithms=[algorithm]))\n    except jwt.exceptions.ExpiredSignatureError:\n        raise HTTPException(",
-        "detail": "app.utilities.auth.jwt_handler",
-        "documentation": {}
-    },
-    {
-        "label": "decode_jwt_token",
-        "kind": 2,
-        "importPath": "app.utilities.auth.jwt_handler",
-        "description": "app.utilities.auth.jwt_handler",
-        "peekOfCode": "def decode_jwt_token(token: str) -> dict:\n    try:\n        return dict(jwt.decode(token, secret_key, algorithms=[algorithm]))\n    except jwt.exceptions.ExpiredSignatureError:\n        raise HTTPException(\n            status_code=status.HTTP_401_UNAUTHORIZED,\n            detail=\"Token has expired\")\n    except jwt.exceptions.DecodeError:\n        raise HTTPException(\n            status_code=status.HTTP_401_UNAUTHORIZED,",
-        "detail": "app.utilities.auth.jwt_handler",
-        "documentation": {}
-    },
-    {
-        "label": "secret_key",
-        "kind": 5,
-        "importPath": "app.utilities.auth.jwt_handler",
-        "description": "app.utilities.auth.jwt_handler",
-        "peekOfCode": "secret_key = os.environ.get(\"JWT_SECRET_KEY\", \"secret_key\")\nalgorithm = os.environ.get(\"JWT_ALGORITHM\", \"HS256\")\ndef generate_jwt_token(payload: dict) -> dict:\n    \"\"\"Create a JWT token\"\"\"\n    return {\n        \"access_token\" : jwt.encode(payload, secret_key, algorithm)\n    }\ndef decode_jwt_token(token: str) -> dict:\n    try:\n        return dict(jwt.decode(token, secret_key, algorithms=[algorithm]))",
-        "detail": "app.utilities.auth.jwt_handler",
-        "documentation": {}
-    },
-    {
-        "label": "algorithm",
-        "kind": 5,
-        "importPath": "app.utilities.auth.jwt_handler",
-        "description": "app.utilities.auth.jwt_handler",
-        "peekOfCode": "algorithm = os.environ.get(\"JWT_ALGORITHM\", \"HS256\")\ndef generate_jwt_token(payload: dict) -> dict:\n    \"\"\"Create a JWT token\"\"\"\n    return {\n        \"access_token\" : jwt.encode(payload, secret_key, algorithm)\n    }\ndef decode_jwt_token(token: str) -> dict:\n    try:\n        return dict(jwt.decode(token, secret_key, algorithms=[algorithm]))\n    except jwt.exceptions.ExpiredSignatureError:",
-        "detail": "app.utilities.auth.jwt_handler",
-        "documentation": {}
-    },
-    {
-        "label": "convert_pdf_to_string",
-        "kind": 2,
-        "importPath": "app.utilities.pdf_to_text",
-        "description": "app.utilities.pdf_to_text",
-        "peekOfCode": "def convert_pdf_to_string(filename: str) -> str:\n    \"\"\"\n    \"\"\"\n    with open(filename, 'rb') as file:\n        pdf = PyPDF2.PdfFileReader(file)\n        text = \"\"\n        for page in range(pdf.numPages):\n            text += pdf.getPage(page).extractText()\n    return text",
-        "detail": "app.utilities.pdf_to_text",
-        "documentation": {}
-    },
-    {
         "label": "app",
         "kind": 5,
         "importPath": "app.api",
         "description": "app.api",
-        "peekOfCode": "app = FastAPI()\napp.include_router(auth_router)\napp.include_router(custom_search_router)\n@app.get('/')\nasync def welcome():\n    return {\n        \"title\": \"Name Search API\",\n        \"description\": \"Name extraction from pdf files and custom web search\",\n    }",
+        "peekOfCode": "app = FastAPI()\napp.include_router(auth_router)\napp.include_router(custom_search_router)\napp.include_router(name_extraction_router)\n@app.get('/')\nasync def welcome():\n    return {\n        \"title\": \"Name Search API\",\n        \"description\": \"Name extraction from pdf files and custom web search\",\n    }",
         "detail": "app.api",
         "documentation": {}
     },
@@ -852,8 +969,17 @@
         "kind": 6,
         "importPath": "tests.test_api.test_custom_seach.test_google_custom_search_api",
         "description": "tests.test_api.test_custom_seach.test_google_custom_search_api",
-        "peekOfCode": "class CustomSearchTestCase(unittest.TestCase):\n    \"\"\"\n    Testing google se\n    \"\"\"\n    def setUp(self) -> None:\n        self.client: TestClient = TestClient(app)\n    def tearDown(self) -> None:\n        ...\n    def test_google_search_api_requires_token(self) -> None:\n        response = self.client.get(\"/custom-search/google-cse\")",
+        "peekOfCode": "class CustomSearchTestCase(unittest.TestCase):\n    \"\"\"\n    Testing google se endpint\n    \"\"\"\n    def setUp(self) -> None:\n        self.client: TestClient = TestClient(app)\n    def tearDown(self) -> None:\n        ...\n    def test_google_search_api_requires_token(self) -> None:\n        response = self.client.get(\"/custom-search/google-cse\")",
         "detail": "tests.test_api.test_custom_seach.test_google_custom_search_api",
+        "documentation": {}
+    },
+    {
+        "label": "NameExtractionAPITestCase",
+        "kind": 6,
+        "importPath": "tests.test_api.test_name_extraction.test_name_extraction_api",
+        "description": "tests.test_api.test_name_extraction.test_name_extraction_api",
+        "peekOfCode": "class NameExtractionAPITestCase(unittest.TestCase):\n    \"\"\"\n        Test name extraction endpoint\n    \"\"\"\n    def setUp(self):\n        self.client = TestClient(app)\n    def test_name_extraction_api_requires_token(self) -> None:\n        response = self.client.post(\"/extract-names/\")\n        self.assertEqual(response.status_code, status.HTTP_403_FORBIDDEN)\n    def test_extract_names_valid_input(self):",
+        "detail": "tests.test_api.test_name_extraction.test_name_extraction_api",
         "documentation": {}
     },
     {
