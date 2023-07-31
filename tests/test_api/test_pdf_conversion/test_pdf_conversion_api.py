@@ -10,6 +10,10 @@ from app.api import app
 class PdfConversionAPITestCase(unittest.TestCase):
     def setUp(self):
         self.client = TestClient(app)
+        self.create_sample_pdf("sample.pdf")
+        
+    def tearDown(self):
+        os.remove("sample.pdf")
 
     def test_pdf_conversion_api_requires_token(self) -> None:
         response = self.client.post("/convert-pdf/text")
@@ -18,8 +22,6 @@ class PdfConversionAPITestCase(unittest.TestCase):
         
     def test_upload_pdf_and_convert(self):
         self.authenticate_client()
-        
-        self.create_sample_pdf("sample.pdf")
 
         with open("sample.pdf", "rb") as f:
             response = self.client.post("/convert-pdf/text", files={"file": ("sample.pdf", f)})
@@ -29,9 +31,7 @@ class PdfConversionAPITestCase(unittest.TestCase):
         expected_text = "This is the text extracted from the PDF.\n"
         self.assertEqual(response.json()["text"], expected_text)
         
-        os.remove("sample.pdf")
         
-
     def authenticate_client(self) -> None:
         credentials = {
             "username": "user@email.com",
@@ -40,6 +40,7 @@ class PdfConversionAPITestCase(unittest.TestCase):
         response = self.client.post("auth/get-token", json=credentials)
         token = response.json().get("access_token")
         self.client.headers = {"Authorization": f"Bearer {token}"}
+        
         
     def create_sample_pdf(self, file_path):
         c = canvas.Canvas(file_path, pagesize=letter)

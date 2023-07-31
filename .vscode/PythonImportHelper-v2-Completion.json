@@ -1077,7 +1077,7 @@
         "kind": 6,
         "importPath": "tests.test_api.test_pdf_conversion.test_pdf_conversion_api",
         "description": "tests.test_api.test_pdf_conversion.test_pdf_conversion_api",
-        "peekOfCode": "class PdfConversionAPITestCase(unittest.TestCase):\n    def setUp(self):\n        self.client = TestClient(app)\n    def test_pdf_conversion_api_requires_token(self) -> None:\n        response = self.client.post(\"/convert-pdf/text\")\n        self.assertEqual(response.status_code, status.HTTP_403_FORBIDDEN)\n    def test_upload_pdf_and_convert(self):\n        self.authenticate_client()\n        self.create_sample_pdf(\"sample.pdf\")\n        with open(\"sample.pdf\", \"rb\") as f:",
+        "peekOfCode": "class PdfConversionAPITestCase(unittest.TestCase):\n    def setUp(self):\n        self.client = TestClient(app)\n        self.create_sample_pdf(\"sample.pdf\")\n    def tearDown(self):\n        os.remove(\"sample.pdf\")\n    def test_pdf_conversion_api_requires_token(self) -> None:\n        response = self.client.post(\"/convert-pdf/text\")\n        self.assertEqual(response.status_code, status.HTTP_403_FORBIDDEN)\n    def test_upload_pdf_and_convert(self):",
         "detail": "tests.test_api.test_pdf_conversion.test_pdf_conversion_api",
         "documentation": {}
     },
