@@ -23,28 +23,33 @@ class CustomSearchTestCase(unittest.TestCase):
         
     def test_google_search_service_check_online(self) -> None:
         self.authenticate_client()
+        
         response = self.client.get("/custom-search/google-cse/")
-        self.assertEqual(response.status_code, status.HTTP_200_OK)
         expected_body = {
             "status": "ready",
             "provider": "google",
         }
+        
+        self.assertEqual(response.status_code, status.HTTP_200_OK)
         self.assertEqual(response.json(), expected_body)
     
     
     def test_google_search_service_retrieve_results(self) -> None:
         self.authenticate_client()
+        
         words_to_search = ["hi", "google"]
         payload = {
             "keywords": words_to_search
         }
+        
         response = self.client.post("/custom-search/google-cse/", json=payload)
-        self.assertEqual(response.status_code, status.HTTP_200_OK)
         result = response.json()[0]
+        
+        self.assertEqual(response.status_code, status.HTTP_200_OK)
         self.assertEqual(GoogleSearchResult(**result).dict(), result)
         
     
-    def authenticate_client(self):
+    def authenticate_client(self) -> None:
         credentials = {
             "username": "user@email.com",
             "password": "password"
